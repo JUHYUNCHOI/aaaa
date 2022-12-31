@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainPageContainer from "./pages/main/MainPageContainer";
-import "./index.scss";
 
 function App() {
   return (
