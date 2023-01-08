@@ -16,11 +16,14 @@ code {
 .container {
   text-align: center;
   width: 100%;
-  background-color: red;
+  background-color: black;
+  color: white;
 }
 
-.container div {
+.h-component {
   display: flex;
+  min-height: 100vh;
+  margin: auto;
 }
 
 .hidden {
@@ -37,21 +40,70 @@ code {
 
 .center {
   margin: 0px auto;
-  font-size: 50px;
+  width: 100%;
+  background-image: url("../res/img/logo.jpg");
   align-items: center;
   padding: 390px 0px;
 }
 
-.vertical {
+
+.flex-column {
+  display: flex;
   flex-direction: column;
+  margin: auto;
+  /* 스스로 중간정렬 */
   align-items: center;
+  /* flex direction이 column일 경우에는 align-items로 중간정렬 */
+  gap: 15px;
 }
 
-.vertical div {
-  padding: 40px;
+.flex-column img {
+  width: 23vw;
+  height: 23vw;
+  padding: 10px;
 }
 
-.vertical img {
-  width: 500px;
-  padding: 20px;
+.flex-column .show img {
+  cursor: pointer;
+}
+
+.flex-column .show img:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+
+
+.flex-column div {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column .hidden:first-child {
+  transform: translateX(-100%);
+}
+
+.flex-column .show:first-child {
+  transform: translateX(0);
+  transition: all 1s;
+}
+
+.flex-column .hidden:last-child {
+  transform: translateX(100%);
+}
+
+.flex-column .show:last-child {
+  transform: translateX(0);
+  transition: all 2s;
+}
+
+.flex-column p {
+  padding: 10px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  /* flex direction이 row일 경우에는 justify-content로 중간정렬 */
+  justify-content: center;
+  margin: auto;
 }
