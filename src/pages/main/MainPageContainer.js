@@ -15,6 +15,10 @@ const MainPageContainer = () => {
     navigate("/page1");
   }
 
+  const goToPage2 = () => {
+    navigate("/page2");
+  }
+
   return (
     <div className="container">
       <div className="h-component hidden">
@@ -25,11 +29,14 @@ const MainPageContainer = () => {
         <div className="flex-column">
           <div className="hidden">
             <img onClick={goToPage1} src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fthumb2.gettyimageskorea.com%2Fimage_preview%2F700%2F201709%2FEYM%2F752194037.jpg&type=sc960_832" />
-            <p>설명이 들어갈 자리입니다.</p>
+            <div className="flex-column paragraph">
+              <p>Autism Spectrum Disorder is a developmental disorder that hinders one’s ability to communicate, learn, behave and interact with others. It is a disorder that can be diagnosed at any age. Symptoms generally appear in the first two years of the child’s life. Click to Learn more</p>
+              <p>Click to see Thuy's story</p>
+            </div>
           </div>
           <div className="hidden">
-            <p>설명이 들어갈 자리입니다.</p>
-            <img src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fthumb2.gettyimageskorea.com%2Fimage_preview%2F700%2F201709%2FEYM%2F752194037.jpg&type=sc960_832" />
+            <p>Click to see Thury</p>
+            <img onClick={goToPage2} src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fthumb2.gettyimageskorea.com%2Fimage_preview%2F700%2F201709%2FEYM%2F752194037.jpg&type=sc960_832" />
           </div>
         </div>
       </div>
