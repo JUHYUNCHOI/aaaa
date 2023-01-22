@@ -43,8 +43,6 @@ code {
   width: 100%;
   background-image: url("../res/img/logo.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   align-items: center;
   padding: 390px 0px;
 }
@@ -107,4 +105,13 @@ code {
   /* flex direction이 row일 경우에는 justify-content로 중간정렬 */
   justify-content: center;
   margin: auto;
+}
+
+.hidden p {
+  width: 300px;
+  text-align: left;
+}
+
+.flex-column.paragraph {
+  flex-direction: column;
 }
