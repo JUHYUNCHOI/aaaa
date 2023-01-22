@@ -13,29 +13,31 @@ const MainPageContainer = () => {
 
   const goToPage1 = () => {
     navigate("/page1");
-  }
+  };
 
   return (
     <div className="container">
       <div className="h-component hidden">
-        <div className="center">
-        </div>
+        <div className="center"></div>
       </div>
       <div className="h-component hidden border">
         <div className="flex-column">
           <div className="hidden">
-            <img onClick={goToPage1} src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fthumb2.gettyimageskorea.com%2Fimage_preview%2F700%2F201709%2FEYM%2F752194037.jpg&type=sc960_832" />
+            <img
+              onClick={goToPage1}
+              src="http://blog.jinbo.net/attach/615/200937431.jpg"
+            />
             <p>설명이 들어갈 자리입니다.</p>
           </div>
           <div className="hidden">
             <p>설명이 들어갈 자리입니다.</p>
-            <img src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fthumb2.gettyimageskorea.com%2Fimage_preview%2F700%2F201709%2FEYM%2F752194037.jpg&type=sc960_832" />
+            <img src="http://blog.jinbo.net/attach/615/200937431.jpg" />
           </div>
         </div>
       </div>
       <div className="h-component hidden">
-        <div className="flex-row" >
-          <img src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fthumb2.gettyimageskorea.com%2Fimage_preview%2F700%2F201709%2FEYM%2F752194037.jpg&type=sc960_832" />
+        <div className="flex-row">
+          <img src="http://blog.jinbo.net/attach/615/200937431.jpg" />
           <p>설명 들어갈 자리입니다.</p>
         </div>
       </div>
@@ -44,3 +46,13 @@ const MainPageContainer = () => {
 };
 
 export default MainPageContainer;
+
+/*
+.center
+  background-repeat: no-repeat;
+  background-size: cover; auto, cover, contain
+  background-position: center;
+
+.h-component
+padding-bottom: 50px;
+*/
