@@ -2,6 +2,7 @@ import react, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../../styles/index.css";
 import Observer from "../../utils/observer";
+// import Map from "../../common/Map";
 
 const MainPageContainer = () => {
   const navigate = useNavigate();
@@ -9,6 +10,7 @@ const MainPageContainer = () => {
   // []안에 있는 값이 바뀔 때만 실행되는게 useEffect.
   useEffect(() => {
     Observer();
+    window.scrollTo(0, 0);
   }, []);
 
   const goToPage1 = () => {
@@ -53,7 +55,7 @@ const MainPageContainer = () => {
       </div>
       <div className="h-component hidden">
         <div className="flex-row">
-          <img src="http://blog.jinbo.net/attach/615/200937431.jpg" />
+          {/* <Map /> */}
           <p>설명 들어갈 자리입니다.</p>
         </div>
       </div>

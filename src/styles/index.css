@@ -16,14 +16,15 @@ code {
 .container {
   text-align: center;
   width: 100%;
-  background-color: black;
-  color: white;
+  /* background-color: black; */
+  color: black;
 }
 
 .h-component {
   display: flex;
   min-height: 100vh;
   margin: auto;
+  padding-bottom: 50px;
 }
 
 .hidden {
@@ -43,6 +44,8 @@ code {
   width: 100%;
   background-image: url("../res/img/logo.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: cover; */
   align-items: center;
   padding: 390px 0px;
 }
@@ -54,13 +57,12 @@ code {
   /* 스스로 중간정렬 */
   align-items: center;
   /* flex direction이 column일 경우에는 align-items로 중간정렬 */
-  gap: 15px;
+  gap: 60px;
 }
 
 .flex-column img {
-  width: 23vw;
-  height: 23vw;
-  padding: 10px;
+  width: 400px;
+  height: 400px;
 }
 
 .flex-column .show img {
@@ -114,4 +116,43 @@ code {
 
 .flex-column.paragraph {
   flex-direction: column;
+  gap: 15px;
+}
+
+.flex-row img {
+  width: 600px;
+}
+
+img {
+  margin: 0px 45px;
+  border: 4px solid #5a5a5a;
+  border-radius: 10px;
+}
+
+.header {
+  position: absolute;
+  /* background-color: red; */
+  width: 100%;
+  height: 60px;
+  z-index: 1;
+  display: flex;
+  justify-content: right;
+  padding: 5px 50px;
+  box-sizing: border-box;
+}
+
+.header button {
+  background-image: url("../res/img/homebutton.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.header button:hover {
+  transform: scale(1.1);
 }
