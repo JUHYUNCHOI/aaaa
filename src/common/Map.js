@@ -1,31 +1,18 @@
 import React from "react";
-import GoogleMapReact from 'google-map-react';
-
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 export default function Map() {
-  const defaultProps = {
-    center: {
-      lat: 10.99835602,
-      lng: 77.01502627
-    },
-    zoom: 11
-  };
-
+  // return <div></div>
   return (
-    // Important! Always set the container height explicitly
-    <div style={{ height: '100vh', width: '100%' }}>
-      <GoogleMapReact
-        bootstrapURLKeys={{ key: "" }}
-        defaultCenter={defaultProps.center}
-        defaultZoom={defaultProps.zoom}
-      >
-        <AnyReactComponent
-          lat={59.955413}
-          lng={30.337844}
-          text="My Marker"
-        />
-      </GoogleMapReact>
-    </div>
-  );
+    <iframe
+      width="600"
+      height="450"
+      style={{ border: '0' }}
+      loading="lazy"
+      allowFullscreen
+      referrerPolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBTdA_CZDkBE3mEJKA7f_9BB9k092w390Q&q=Vietnam+hospital+police">
+    </iframe>
+    // <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfcoleH1fpMe3rOhKazZPWr0VICSiaZG--deXohnG1SrjF0bw/viewform?embedded=true" width="640" height="382" frameborder="0" marginheight="0" marginwidth="0">로드 중…</iframe>
+  )
 }
+

@@ -156,3 +156,25 @@ img {
 .header button:hover {
   transform: scale(1.1);
 }
+
+.flex-column .p1_content {
+  flex-direction: column;
+  padding: 10px;
+  align-items: start;
+}
+
+.flex-column .p1_content p {
+  padding: 0px;
+}
+
+.flex-column .p1_content ul {
+  text-align: start;
+}
+
+.flex-column .p1_content ol {
+  text-align: start;
+}
+
+.h-component.flex-column.left {
+  align-items: start;
+}
