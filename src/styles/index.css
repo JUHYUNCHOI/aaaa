@@ -159,7 +159,7 @@ img {
 
 .flex-column .p1_content {
   flex-direction: column;
-  padding: 10px;
+  padding: 10px 63px;
   align-items: start;
 }
 
