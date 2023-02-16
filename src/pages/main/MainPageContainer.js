@@ -2,7 +2,7 @@ import react, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../../styles/index.css";
 import Observer from "../../utils/observer";
-import Map from "../../common/Map";
+import Map from "../../common/Map1";
 
 const MainPageContainer = () => {
   const navigate = useNavigate();
@@ -55,7 +55,7 @@ const MainPageContainer = () => {
       </div>
       <div className="h-component hidden">
         <div className="flex-row">
-          <Map />
+          <Map center={{ lat: 10.762622, lng: 106.660172 }} />
           <p>설명 들어갈 자리입니다.</p>
         </div>
       </div>
