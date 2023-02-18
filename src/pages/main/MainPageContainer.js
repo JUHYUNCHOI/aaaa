@@ -2,7 +2,9 @@ import react, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../../styles/index.css";
 import Observer from "../../utils/observer";
-import Map from "../../common/Map1";
+import Map from "../../common/Map2";
+import autism from "../../res/img/autism.svg";
+import interview from "../../res/img/interview.svg";
 
 const MainPageContainer = () => {
   const navigate = useNavigate();
@@ -31,7 +33,7 @@ const MainPageContainer = () => {
           <div className="hidden">
             <img
               onClick={goToPage1}
-              src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fthumb2.gettyimageskorea.com%2Fimage_preview%2F700%2F201709%2FEYM%2F752194037.jpg&type=sc960_832"
+              src={autism}
             />
             <div className="flex-column paragraph">
               <p>
@@ -48,14 +50,14 @@ const MainPageContainer = () => {
             <p>Click to see Thury</p>
             <img
               onClick={goToPage2}
-              src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fthumb2.gettyimageskorea.com%2Fimage_preview%2F700%2F201709%2FEYM%2F752194037.jpg&type=sc960_832"
+              src={interview}
             />
           </div>
         </div>
       </div>
       <div className="h-component hidden">
         <div className="flex-row">
-          <Map center={{ lat: 10.762622, lng: 106.660172 }} />
+          <Map />
           <p>설명 들어갈 자리입니다.</p>
         </div>
       </div>
@@ -64,13 +66,3 @@ const MainPageContainer = () => {
 };
 
 export default MainPageContainer;
-
-/*
-.center
-  background-repeat: no-repeat;
-  background-size: cover; auto, cover, contain
-  background-position: center;
-
-.h-component
-padding-bottom: 50px;
-*/
