@@ -2,7 +2,7 @@ import react, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../../styles/index.css";
 import Observer from "../../utils/observer";
-import Map from "../../common/Map2";
+import Map from "../../common/Map4";
 import autism from "../../res/img/autism.svg";
 import interview from "../../res/img/interview.svg";
 
