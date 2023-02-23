@@ -5,6 +5,7 @@ import Observer from "../../utils/observer";
 import Map from "../../common/Map4";
 import autism from "../../res/img/autism.svg";
 import interview from "../../res/img/interview.svg";
+import Header from "../../common/Header";
 
 const MainPageContainer = () => {
   const navigate = useNavigate();
@@ -25,6 +26,7 @@ const MainPageContainer = () => {
 
   return (
     <div className="container">
+      <Header />
       <div className="h-component hidden">
         <div className="center"></div>
       </div>

@@ -47,7 +47,7 @@ const Page3 = () => {
   console.log(111, products)
   return (
     <div className="container">
-      <Header />
+      <Header showHomeButton={true} />
       <div className="h-component hidden">
         <div className="center">
         </div>

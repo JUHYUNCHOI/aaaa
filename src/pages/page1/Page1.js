@@ -1,10 +1,12 @@
-import react, { useEffect } from 'react';
+import react, { useEffect, useState } from 'react';
 import Observer from "../../utils/observer";
 import Header from "../../common/Header";
 import { P1_Label } from "../../common/lang"
+import { language } from '../../recoil/languageRecoil';
+import { useRecoilState } from "recoil";
 
 const Page1 = () => {
-  // const lang = useState("en");
+  const [lang, setLang] = useRecoilState(language);
 
   // []안에 있는 값이 바뀔 때만 실행되는게 useEffect.
   useEffect(() => {
@@ -12,18 +14,27 @@ const Page1 = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  useEffect(() => {
+    if (sessionStorage.getItem("language")) {
+      setLang(sessionStorage.getItem("language"));
+    } else {
+      setLang(language)
+    }
+  }, [sessionStorage])
+
+  const LANGUAGE_LABEL = lang && lang === "Vietnames" ? P1_Label.VI : P1_Label.EN;
 
   return (
     <div className="container">
-      <Header />
+      <Header showHomeButton={true} />
       <div className="h-component hidden">
         <div className="center">
         </div>
       </div>
       <div className="h-component flex-column left">
         <div className="p1_content">
-          <h1>{P1_Label.EN.ASD_DEF_TITLE}</h1>
-          <p>{P1_Label.EN.ASD_DEF}</p>
+          <h1>{LANGUAGE_LABEL.ASD_DEF_TITLE}</h1>
+          <p>{LANGUAGE_LABEL.EN.ASD_DEF}</p>
         </div>
 
         <div className="p1_content">

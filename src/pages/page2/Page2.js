@@ -12,7 +12,7 @@ const Page2 = () => {
 
   return (
     <div className="container">
-      <Header />
+      <Header showHomeButton={true} />
       <div className="h-component hidden">
         <div className="center">
         </div>
