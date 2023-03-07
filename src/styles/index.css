@@ -50,6 +50,10 @@ code {
   padding: 390px 0px;
 }
 
+.shop {
+  background-image: url("../res/img/shoplogo.svg");
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -123,11 +127,11 @@ code {
   width: 600px;
 }
 
-/* img {
+.main-img {
   margin: 0px 45px;
   border: 4px solid #5a5a5a;
   border-radius: 10px;
-} */
+}
 
 .header {
   position: absolute;
@@ -141,7 +145,7 @@ code {
   box-sizing: border-box;
 }
 
-.header button {
+.header #go_home_button {
   background-image: url("../res/img/homebutton.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -153,7 +157,7 @@ code {
   cursor: pointer;
 }
 
-.header button:hover {
+.header #go_home_button:hover {
   transform: scale(1.1);
 }
 
@@ -165,6 +169,11 @@ code {
 
 .flex-column .p1_content p {
   padding: 0px;
+  text-align: start;
+}
+
+.flex-column .p1_content h1 {
+  text-align: start;
 }
 
 .flex-column .p1_content ul {
@@ -219,15 +228,63 @@ code {
 }
 
 #select_box {
-  padding: 5px 30px 5px 10px;
-  border-radius: 4px;
-  font-size: 18px;
-  outline: 0 none;
-  margin-right: 30px;
+  text-align: left;
+  margin: auto 30px 0px;
 }
 
-#select_box option {
-  background: black;
-  color: white;
-  padding: 3px 0
+#selected_lang {
+  width: 200px;
+  border: 1px solid #C4C4C4;
+  background: aliceblue;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 12px 13px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+#selected_lang:focus {
+  border: 1px solid #9B51E0;
+  border-radius: 10px;
+  outline: 3px solid #F8E4FF;
+}
+
+#select_box .listbox {
+  width: 200px;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid #C4C4C4;
+  border-radius: 10px;
+}
+
+.listbox_item {
+  border: none;
+  background: white;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 7px 10px;
+  margin: 5px 7px;
+}
+
+.listbox_item:focus {
+  background: #F8E4FF;
+  width: 184px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.listbox.show {
+  display: block;
+}
+
+.listbox.hide {
+  display: none;
 }

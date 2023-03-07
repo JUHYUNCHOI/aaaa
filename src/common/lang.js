@@ -65,5 +65,24 @@ export const P1_Label = {
   }
 }
 
+export const Main_Label = {
+  EN: {
+    ASD_SHORT_INFO: "Autism Spectrum Disorder is a developmental disorder that hinders one’s ability to communicate, learn, behave and interact with others. It is a disorder that can be diagnosed at any age. Symptoms generally appear in the first two years of the child’s life. Click to Learn more",
+    ASD_CLICK: "Click to see Thuy's story",
+  },
+  VI: {
+    ASD_SHORT_INFO: "Rối loạn tự kỷ là một rối loạn phát triển ảnh hưởng đến khả năng giao tiếp, học tập, cư xử và tương tác với người khác. Đây là một rối loạn có thể được chẩn đoán ở bất kỳ độ tuổi nào. Triệu chứng thường xuất hiện trong hai năm đầu đời của trẻ. Nhấn vào để tìm hiểu thêm.",
+    ASD_CLICK: "Nhấn vào để xem câu chuyện của Thuy",
+  }
+}
+
+export const P2_Label = {
+  EN: {
+
+  },
+  VI: {
+
+  }
+}
 
 

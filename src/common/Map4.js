@@ -87,6 +87,6 @@ export default function Map(props) {
     );
   }
   return (
-    <div style={{ width: "600px", height: "500px" }} ref={mapRef} />
+    <div style={{ width: "600px", height: "500px", marginRight: "30px" }} ref={mapRef} />
   )
 }
