@@ -1,4 +1,4 @@
-import react, { useEffect } from 'react';
+import react, { useEffect, useState } from 'react';
 import Observer from "../../utils/observer";
 import Header from "../../common/Header";
 import { P1_Label } from "../../common/lang"
@@ -25,9 +25,9 @@ const Page1 = () => {
       </div>
       <div className="h-component flex-column left">
         <div className="p1_content">
-          <h1>{LABEL.ASD_DEF_TITLE}</h1>
-          <p>{LABEL.ASD_DEF}</p>
-        </div>
+          <h1>{LANGUAGE_LABEL.ASD_DEF_TITLE}</h1>
+          <p>{LANGUAGE_LABEL.EN.ASD_DEF}</p>
+        </div >
 
         <div className="p1_content">
           <h1>{LABEL.ASD_CLASSIFICATION_TITLE}</h1>
@@ -79,8 +79,8 @@ const Page1 = () => {
             <li>{LABEL.ASD_TREATMENTS_DEF5}</li>
           </ol>
         </div>
-      </div>
-    </div>
+      </div >
+    </div >
   );
 }
 

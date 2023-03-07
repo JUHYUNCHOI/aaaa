@@ -272,19 +272,13 @@ code {
   line-height: 16px;
   padding: 7px 10px;
   margin: 5px 7px;
+  box-sizing: border-box;
 }
 
 .listbox_item:focus {
   background: #F8E4FF;
   width: 184px;
   border-radius: 8px;
+  box-sizing: border-box;
   text-align: left;
-}
-
-.listbox.show {
-  display: block;
-}
-
-.listbox.hide {
-  display: none;
 }
